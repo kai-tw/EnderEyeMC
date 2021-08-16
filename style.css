@@ -1,0 +1,90 @@
+#app {
+	font: 16px/2 'Microsoft JhengHei',sans-serif;
+	width: 100%;
+	line-height: 1.2;
+	color: #333;
+}
+#app #point-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#app .item {
+	margin: 1em;
+	border-radius: 1em;
+	width: fit-content;
+	overflow: hidden;
+	box-shadow: 0px .2em 1em .2em #eee;
+}
+#app .item .row {
+	display: flex;
+	align-items: center;
+	padding: 1em;
+}
+#app .item span {
+	width: 4em;
+}
+#app .item input {
+	outline: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: transparent;
+	font-size: 1.2em;
+	font-family: inherit;
+	text-align: right;
+	box-sizing: border-box;
+}
+#app #result {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#app #result div {
+	position: relative;
+	margin: 1em;
+	width: 10em;
+	height: 5em;
+	overflow: hidden;
+	text-align: center;
+	line-height: 5em;
+}
+#app #result div:before {
+	position: absolute;
+	right: -.1em;
+	bottom: -.1em;
+	font-family: "Courgette", sans-serif;
+	color: #ddd;
+	font-size: 4em;
+}
+#app #result #x-axis:before {
+	content: "x";
+}
+#app #result #z-axis:before {
+	content: "z";
+}
+#app #control-panel {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#app #control-panel button {
+	margin: 1em;
+	padding: 1em 3em;
+	border: none;
+	border-radius: 1em;
+	font: inherit;
+	background: transparent;
+	box-shadow: 0 .2em 1em .2em #eee;
+	transition: all .2s ease;
+	cursor: pointer
+}
+#app #control-panel button:active {
+	transform: translateY(.2em);
+}
+#app #control-panel button:hover {
+	background: #fafafa;
+	box-shadow: 0 0 0 0 transparent;
+}
